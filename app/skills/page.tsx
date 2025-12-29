@@ -1,28 +1,76 @@
 import Section from "@/components/section";
 
 const skills = {
-  Automation: ["Selenium", "Playwright", "Appium"],
-  API: ["REST Assured", "Postman", "Karate"],
-  Performance: ["JMeter", "Gatling"],
-  DevOps: ["GitHub Actions", "Jenkins", "CI/CD"],
-  Languages: ["Java", "JavaScript", "Go"],
+  "Automation & Testing": [
+    "Selenium",
+    "Cypress",
+    "Appium",
+    "Manual Testing",
+    "Regression Testing",
+    "UAT",
+    "Test Planning & Execution",
+  ],
+  "API & Backend": [
+    "RESTful APIs",
+    "Postman",
+    "Charles Proxy",
+    "API Automation",
+    "Microservices Testing",
+    "Kafka",
+  ],
+  Performance: [
+    "JMeter",
+    "Artillery",
+    "Load Testing",
+    "Stress Testing",
+    "Scalability Testing",
+  ],
+  "Programming & Scripting": [
+    "Java",
+    "JavaScript (5+ years)",
+    "Go",
+    "Shell Scripting",
+  ],
+  "DevOps & Tooling": [
+    "Jenkins",
+    "CI/CD Pipelines",
+    "Git",
+    "Docker",
+    "JIRA",
+    "Redmine",
+    "TestLink",
+  ],
+  "Databases & Data": [
+    "SQL",
+    "Data Validation",
+    "Database Migration (DynamoDB → PostgreSQL)",
+  ],
 };
 
 export default function Skills() {
   return (
     <Section
       title="Skills"
-      subtitle="Tools and technologies I use to build scalable and reliable quality engineering systems."
+      subtitle="Tools, technologies, and practices I use to deliver reliable and scalable software quality."
     >
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-12">
         {Object.entries(skills).map(([category, items]) => (
           <div key={category}>
-            <h3 className="text-xl font-medium mb-4">{category}</h3>
-            <div className="flex flex-wrap gap-2">
+            {/* Category Title */}
+            <h3 className="text-xl font-semibold text-gray-100 mb-5">
+              {category}
+            </h3>
+
+            {/* Skill Pills */}
+            <div className="flex flex-wrap gap-3">
               {items.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 text-sm bg-gray-800 rounded-md"
+                  className="px-4 py-1.5 text-sm font-medium
+                             bg-gray-800 text-gray-100
+                             border border-gray-700
+                             rounded-full
+                             hover:bg-gray-700 transition"
                 >
                   {skill}
                 </span>

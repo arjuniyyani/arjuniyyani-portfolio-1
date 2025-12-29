@@ -13,9 +13,7 @@ export default function Home() {
         </p>
 
         <p className="max-w-2xl text-gray-400 leading-relaxed mb-10">
-          I design scalable automation frameworks for Web, API, and Mobile
-          platforms, enabling high-quality releases through strong test strategy,
-          CI/CD integration, and engineering best practices.
+        QA Lead and Automation Architect with 10+ years of experience driving quality across Android, iOS, Web, and API platforms. Proven expertise in building scalable automation frameworks, leading large migration initiatives, and improving release quality in high-traffic, Agile environments.
         </p>
 
         <div className="flex gap-4">
