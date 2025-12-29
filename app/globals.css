@@ -1,4 +1,12 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "ss01", "cv01";
+}
+
 
 :root {
   --background: #ffffff;

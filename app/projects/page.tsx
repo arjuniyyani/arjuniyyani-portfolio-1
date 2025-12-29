@@ -22,7 +22,8 @@ const projects = [
           {projects.map((project) => (
             <div
               key={project.title}
-              className="border border-gray-800 p-6 rounded-lg"
+              className="border border-gray-800 p-6 rounded-xl hover:border-gray-600 transition"
+
             >
               <h3 className="text-xl font-medium mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-3">{project.description}</p>
